@@ -1,0 +1,15 @@
+void TestTree()
+{
+    //利用数组
+    char array[] = "abd###ce##f";
+    BindaryTree<char> bt(array, strlen(array), '#');
+    //K在树中，
+    cout << "K在树中" << endl;
+    cout << "第3层，TheKCount=" << bt.TheKCount(3) << endl;
+    /*K小于0*/
+    cout << "K小于0" << endl;
+    cout << "第-2层，TheKCount=" << bt.TheKCount(-2) << endl;
+    //K大于树的高度，
+    cout << "K大于树的高度" << endl;
+    cout << "第4层，TheKCount=" << bt.TheKCount(4) << endl;
+    }
